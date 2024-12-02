@@ -1,3 +1,9 @@
+class PrintInfo {
+   static void print() {
+        System.out.println("Name: Kavya Singh");
+        System.out.println("USN: 1BM23CS146");
+    }
+}
 public class Main {
 
     static class BMSDisplayThread extends Thread {
@@ -27,6 +33,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        PrintInfo.print();
         Thread bmsThread = new BMSDisplayThread();
         Thread cseThread = new CSEDisplayThread();
 
@@ -34,3 +41,4 @@ public class Main {
         cseThread.start();
     }
 }
+
