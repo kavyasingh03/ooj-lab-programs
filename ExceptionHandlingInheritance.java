@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+class PrintInfo {
+   static void print() {
+        System.out.println("Name: Kavya Singh");
+        System.out.println("USN: 1BM23CS146");
+    }
+}
+
+
 class WrongAgeException extends Exception {
     public WrongAgeException(String message) {
         super(message);
@@ -34,6 +42,7 @@ class Son extends Father {
 
 public class ExceptionHandlingInheritance {
     public static void main(String[] args) {
+        PrintInfo.print();
         Scanner scanner = new Scanner(System.in);
 
         try {
@@ -57,4 +66,3 @@ public class ExceptionHandlingInheritance {
         }
     }
 }
-
